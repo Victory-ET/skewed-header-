@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+ body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    font-weight: 400;
+    font-size: 14px;
+    color: #dddddd;
+}
+
+.hero{
+    position: relative;
+    background-color: aliceblue;
+    background-size: cover;
+    background-position: bottom center;
+    border: 2vw solid #121212;
+}
+
+.hero-grad {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(253, 187, 45, 0.8) 0%, rgba(58, 28, 113, 0.67) 100%);
+}
+
+.hero-diagonal {
+    position:absolute;
+    bottom: -0.5px;
+    width: 100%;
+    z-index: 2;
+    fill: #121212;
+}
+
+.hero-content{
+    position: relative;
+    padding: 60px;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+    z-index: 1;
+    text-align: center;
+}
+
+.hero-content .heading {
+  max-width: 700px;
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-weight: 100;
+  color: #121212;
+  margin: 0 auto;
+  font-size: 40px;
+  letter-spacing: 8px;
+  margin-bottom: 60px;
+}
+
+.hero-scroll {
+  height: 70px;
+  width: 40px;
+  border-radius: 25px;
+  position: relative;
+  display: inline-block;
+  Box-shadow:0 0 0 1px #121212;
+}
+
+.hero-scroll::before{
+  content: '';
+  height: 8px;
+  width: 8px;
+  Position: absolute;
+  left: 50%;
+  top: 8px;
+  Background: #121212;
+  margin-left: -4px;
+  border-radius: 4px;
+  Animation: 1.5s scroll infinite;
+  
+}
+
+.content{
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 60px 0;
+  Line-height:1.6;
+}
+
+.content p{
+  margin-top: 0;
+  margin-bottom: 60px;
+  Color: #8853c56;
+}
+
+@keyframes scroll{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: translate(45px);
+  }
+}
+
+
+
