@@ -100,7 +100,7 @@
   }
   100%{
     opacity: 0;
-    transform: translate(45px);
+    transform: translateY(45px);
   }
 }
 
